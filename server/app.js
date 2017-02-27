@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var port = 3000;
+var bodyParser = require('body-parser');
+app.use (bodyParser.urlencoded({extended: true}));
+
 
 
 // initial jokes provided by the client
@@ -23,11 +26,28 @@ var jokes = [
   }
 ];
 
+// NOTE: for loop to cycle through jokes (or in client?)
+// var jokeObject =
+// function jokeObject() {
+//   for (var i = 0; i < jokes.length; i++) {
+//     jokes[i]
+//   }
+// }
+// console.log(jokeObject(jokes));
+
+// console.log(jokes); // NOTE: working onto terminal
+
 // static file requests
 app.use(express.static('server/public'));
 
 // routes
-
+// app.get('/firstJoke', function(req, res) {
+app.get('/', function(req, res) {
+var newJoke = req.body;
+console.log(newJoke);
+  // res.send(jokes[0]);
+  res.send(jokes);
+}); // app.post
 
 // Send index.html file
 app.get('/', function(req, res) {

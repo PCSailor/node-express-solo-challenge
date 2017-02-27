@@ -1,1 +1,18 @@
-/* empty */
+body {
+  display: inline;
+}
+
+#jokeButton {
+  border: 1px, black;
+  width: 30px;
+}
+#jokes {
+  border: 1px, black;
+  width: 75px;
+  height: 300px;
+}
+#inputJoke {
+  border: 1px, black;
+  width: 75px;
+  height: 300px;
+}
