@@ -1,5 +1,5 @@
 {
-  "name": "code-challenge-node-express",
+  "name": "phil-curtis",
   "version": "1.0.0",
   "description": "### Objectives - Set up server side routes to handle requests in a node/express application. - Send requests to the server from both the using ajax in the client side script. - Display response on the DOM. - Demonstrate the separation of logic between the client and the server.",
   "main": "server/app.js",
@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kdszafranski/node-express-solo-challenge.git"
+    "url": "git+https://github.com/PCSailor/node-express-solo-phil-curtis.git"
   },
-  "author": "Kris Szafranski",
+  "author": "Philip Curtis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kdszafranski/node-express-solo-challenge/issues"
   },
   "homepage": "https://github.com/kdszafranski/node-express-solo-challenge#readme",
   "dependencies": {
+    "body-parser": "^1.16.1",
     "express": "^4.14.1"
   }
 }
